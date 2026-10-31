@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="600" viewBox="0 0 640 600">
+<defs>
+<linearGradient id="metal"><stop stop-color="#b5b9ad"/><stop offset=".3" stop-color="#e6e8df"/><stop offset=".55" stop-color="#cbd0c2"/><stop offset="1" stop-color="#90988c"/></linearGradient>
+<linearGradient id="rim"><stop stop-color="#a1a99c"/><stop offset=".5" stop-color="#e3e7dc"/><stop offset="1" stop-color="#879180"/></linearGradient>
+<linearGradient id="glass"><stop stop-color="#d8e4d4" stop-opacity=".3"/><stop offset=".5" stop-color="#f7fbf0" stop-opacity=".15"/><stop offset="1" stop-color="#a3b69d" stop-opacity=".5"/></linearGradient>
+<linearGradient id="black"><stop stop-color="#465044"/><stop offset="1" stop-color="#252f2a"/></linearGradient>
+<linearGradient id="white"><stop stop-color="#fffef2"/><stop offset="1" stop-color="#c9d0bf"/></linearGradient>
+<radialGradient id="floor"><stop stop-color="#ecf0d7"/><stop offset="1" stop-color="#abb69b"/></radialGradient>
+<pattern id="studs" width="28" height="22" patternUnits="userSpaceOnUse"><ellipse cx="14" cy="11" rx="5" ry="3" fill="#7c8975" opacity=".18"/></pattern>
+</defs>
+<ellipse cx="327" cy="527" rx="207" ry="31" fill="#aeb59e" opacity=".2"/>
+<!-- base and feet -->
+<path d="M149 474v35l48 20 13-36M438 489v30l43-15v-32" fill="#465043" stroke="#394535" stroke-width="2"/>
+<path d="M122 433v38c0 50 388 50 388 0v-38" fill="url(#metal)" stroke="#7f897a" stroke-width="2"/>
+<ellipse cx="316" cy="432" rx="194" ry="58" fill="#c3cbb8" stroke="#929e86" stroke-width="3"/>
+<ellipse cx="316" cy="428" rx="176" ry="46" fill="url(#floor)"/>
+<ellipse cx="316" cy="428" rx="173" ry="43" fill="url(#studs)"/>
+<path d="M132 467c60 40 303 48 370-1" fill="none" stroke="#6b7765" stroke-width="7"/>
+<path d="M138 477c70 36 283 37 360 0" fill="none" stroke="#e5e9dc" stroke-width="3"/>
+<!-- back chamber -->
+<path d="M155 173v246c11 46 301 51 322 0V173" fill="url(#glass)" stroke="#a3b29c" stroke-width="2"/>
+<path d="M173 193v208M459 195v208" stroke="#f9fff0" stroke-opacity=".8" stroke-width="4"/>
+<path d="M215 199v198M410 205v195" stroke="#a5b29b" stroke-width="2" opacity=".4"/>
+<!-- laboratory rear wall -->
+<path d="M222 246l150-20 65 39-151 21z" fill="#c4ccba"/>
+<path d="M222 246v117l64 40V286z" fill="#a4b19c"/>
+<path d="M286 286l151-21v118l-151 20z" fill="#dce2cf"/>
+<path d="M302 294l113-16v65l-113 16z" fill="#778a79"/>
+<path d="M309 299l100-14v49l-100 15z" fill="#ccd8bd"/>
+<path d="M320 316l17 5 14-18 16 23 18-15 14 2" fill="none" stroke="#6e8e68" stroke-width="3"/>
+<path d="M313 357l99-14v8l-99 14z" fill="#a8b59c"/>
+<!-- lab workbench -->
+<path d="M296 370l139-22 30 19-138 25z" fill="#f0f1e1" stroke="#a4af98" stroke-width="1.5"/>
+<path d="M327 392l138-25v15l-138 25z" fill="#9fae95"/>
+<path d="M296 370l31 22v15l-31-21z" fill="#c0c9b1"/>
+<path d="M332 405v32l11-2v-31M448 384v30l10-2v-30" fill="#73846f"/>
+<!-- microscope -->
+<path d="M362 362l28-4 12 7-28 5z" fill="#53634f"/><path d="M381 359v-25l10-2v27" fill="#e5e9d7"/><path d="M386 334l-16-14-7 7 17 14" fill="#f4f3df" stroke="#a4b297" stroke-width="2"/><path d="M362 323l9-9 8 6-9 9z" fill="#55634f"/><path d="M366 346l18-3v5l-18 3z" fill="#5f7059"/>
+<!-- vials -->
+<path d="M418 337v19c0 5 10 3 10-2v-19" fill="#b5ccb0" stroke="#7d9879" stroke-width="1.5"/><path d="M419 346v10c0 3 8 2 8-2v-10" fill="#ed9562"/><ellipse cx="423" cy="335" rx="6" ry="2" fill="#e2e7cd"/>
+<path d="M441 330v19c0 5 10 3 10-2v-19" fill="#b5ccb0" stroke="#7d9879" stroke-width="1.5"/><path d="M442 340v9c0 3 8 2 8-2v-9" fill="#95ac77"/><ellipse cx="446" cy="328" rx="6" ry="2" fill="#e2e7cd"/>
+<!-- figure legs -->
+<path d="M241 384l24-4 8 42-25 7z" fill="#485e68"/><path d="M273 380l23 2 4 39-25 4z" fill="#3b505b"/><path d="M247 417l25-4 3 15-32 7-7-6zM276 413l24 1 9 12-32 6z" fill="#354851"/>
+<!-- figure body -->
+<path d="M242 315l38-7 22 17-9 62-51 6-10-45z" fill="url(#white)" stroke="#acb59f" stroke-width="1.5"/>
+<path d="M262 317l8 52 10-57" fill="#a9bdaf"/><path d="M263 317l7 17 9-21M270 335v44" fill="none" stroke="#758b77" stroke-width="2"/>
+<path d="M281 350l12-2v12l-12 2z" fill="#a3b8a2"/><path d="M242 324l-17 7-13 42 17 7 17-35" fill="url(#white)" stroke="#acb59f" stroke-width="2"/>
+<path d="M295 324l16 4 17 29-13 12-19-25" fill="url(#white)" stroke="#acb59f" stroke-width="2"/>
+<path d="M216 372c-10 6-7 19 0 21l6-5c-7-3-5-8 0-8l5 4 6-7" fill="#eac479" stroke="#c4a569" stroke-width="2"/>
+<path d="M318 356c7-9 20-4 18 6l-7 2c4-7-3-10-6-5l2 7-8 2" fill="#eac479" stroke="#c4a569" stroke-width="2"/>
+<!-- head -->
+<path d="M247 274v31c0 17 39 17 39-1v-31" fill="#f0ce83" stroke="#c6ad70" stroke-width="1.5"/>
+<ellipse cx="266" cy="273" rx="20" ry="10" fill="#efd392"/><path d="M244 280v-10c0-22 46-24 46-1v17l-8-5-3-12-24 5-5 11z" fill="#514e3c"/>
+<path d="M250 269c0-20 36-27 40-6-13-7-20 2-40 6" fill="#626048"/>
+<circle cx="260" cy="291" r="2" fill="#504c36"/><circle cx="277" cy="289" r="2" fill="#504c36"/><path d="M262 302q7 6 13-2" fill="none" stroke="#8e714a" stroke-width="1.5"/>
+<path d="M252 286l13-2v10l-13 2zM270 283l13-2v10l-13 2zM265 289l5-1" fill="none" stroke="#606a53" stroke-width="1.7"/>
+<!-- foreground cylinder pillars -->
+<path d="M145 189l23 5v224l-23-9z" fill="url(#rim)" stroke="#8a9880" stroke-width="2"/>
+<path d="M466 192l21-7v224l-21 12z" fill="url(#rim)" stroke="#8a9880" stroke-width="2"/>
+<path d="M151 202v189M473 201v189" stroke="#e8edde" stroke-width="4"/>
+<!-- top drum -->
+<path d="M122 125v51c0 73 388 73 388 0v-51" fill="url(#metal)" stroke="#8f9a86" stroke-width="2"/>
+<path d="M127 155c45 58 323 65 377 0" stroke="#83907a" stroke-width="6" fill="none"/>
+<path d="M127 169c51 58 321 61 377 0" stroke="#e1e6d8" stroke-width="3" fill="none"/>
+<ellipse cx="316" cy="124" rx="194" ry="64" fill="#d5dbc9" stroke="#8d9982" stroke-width="3"/>
+<ellipse cx="316" cy="120" rx="172" ry="48" fill="url(#rim)" stroke="#a3ae96" stroke-width="2"/>
+<ellipse cx="316" cy="116" rx="140" ry="34" fill="#687860" stroke="#e3e7d7" stroke-width="4"/>
+<ellipse cx="316" cy="113" rx="118" ry="26" fill="#b4c0a4"/>
+<!-- lego studs on lid -->
+<g fill="#cbd3bd" stroke="#8f9f82" stroke-width="1.5"><path d="M187 104v10c0 9 24 9 24 0v-10"/><ellipse cx="199" cy="104" rx="12" ry="5"/><path d="M226 86v10c0 9 24 9 24 0V86"/><ellipse cx="238" cy="86" rx="12" ry="5"/><path d="M295 76v10c0 9 24 9 24 0V76"/><ellipse cx="307" cy="76" rx="12" ry="5"/><path d="M369 82v10c0 9 24 9 24 0V82"/><ellipse cx="381" cy="82" rx="12" ry="5"/><path d="M418 101v10c0 9 24 9 24 0v-10"/><ellipse cx="430" cy="101" rx="12" ry="5"/><path d="M442 127v10c0 9 24 9 24 0v-10"/><ellipse cx="454" cy="127" rx="12" ry="5"/><path d="M394 151v10c0 9 24 9 24 0v-10"/><ellipse cx="406" cy="151" rx="12" ry="5"/><path d="M319 160v10c0 9 24 9 24 0v-10"/><ellipse cx="331" cy="160" rx="12" ry="5"/><path d="M244 151v10c0 9 24 9 24 0v-10"/><ellipse cx="256" cy="151" rx="12" ry="5"/><path d="M184 132v10c0 9 24 9 24 0v-10"/><ellipse cx="196" cy="132" rx="12" ry="5"/></g>
+<!-- top center hub -->
+<path d="M282 110v17c0 14 69 14 69 0v-17" fill="#b1bea0" stroke="#7c8e6e" stroke-width="2"/><ellipse cx="316" cy="109" rx="35" ry="12" fill="#dbe3cb" stroke="#849675" stroke-width="2"/><ellipse cx="316" cy="106" rx="21" ry="7" fill="#8b9f79"/>
+<!-- front control unit -->
+<path d="M255 452l104 1 16 23-106 3z" fill="#69755f" stroke="#4a5844" stroke-width="2"/><path d="M269 479l106-3v23l-106 3z" fill="url(#black)"/><path d="M255 452l14 27v23l-14-26z" fill="#57624e"/>
+<path d="M281 461l36-1 5 9-36 1z" fill="#bacb9c"/><path d="M287 464l24-1" stroke="#657950" stroke-width="2"/>
+<ellipse cx="342" cy="465" rx="13" ry="7" fill="#b54e2d"/><path d="M329 461v4c0 9 26 9 26 0v-4" fill="#d66b3a"/><ellipse cx="342" cy="460" rx="13" ry="6" fill="#ee8a4a"/>
+<text x="319" y="491" fill="#c4d0b5" font-family="monospace" font-size="6" text-anchor="middle" letter-spacing="2">CAREER CARRIER</text>
+<!-- bolts and markings -->
+<g fill="#6c7d62"><circle cx="183" cy="460" r="4"/><circle cx="450" cy="460" r="4"/><circle cx="171" cy="181" r="3"/><circle cx="461" cy="181" r="3"/></g>
+<path d="M185 462h-5M452 462h-5" stroke="#d0d9bf"/>
+<path d="M188 401v-95" stroke="#faffec" opacity=".6" stroke-width="8"/><path d="M203 388v-55" stroke="#faffec" opacity=".35" stroke-width="3"/>
+</svg>

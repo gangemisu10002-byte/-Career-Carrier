@@ -1,2 +1,41 @@
-# -Career-Carrier
-팀 방명록, 메세지
+# Career Carrier
+
+레고 작품 소개용 한국어 웹사이트. 빌드 없이 GitHub Pages에서 실행됩니다.
+
+## GitHub Pages 배포
+
+1. 이 폴더의 `index.html`, `style.css`, `app.js`, `config.js`, `assets/`, `.nojekyll`을 저장소 `lego_time_machine` 루트에 업로드합니다. 기존 파일이 있으면 먼저 백업하세요.
+2. GitHub 저장소의 Settings → Pages → Build and deployment에서 Deploy from a branch, `main`, `/ (root)`를 선택하고 Save 합니다.
+3. 배포가 완료되면 `https://gangemisu10002-byte.github.io/lego_time_machine/`에서 확인합니다. 이 작업 공간에서는 GitHub 계정에 연결하지 않았으며 실제 저장소에 업로드하지 않았습니다.
+
+## 설문 링크 추가
+
+`config.js`의 `surveyUrl`에 Google Forms 등의 전체 https 주소를 입력합니다. 비워 두면 버튼은 ‘오픈 예정’을 안내하며, 주소를 넣으면 새 탭으로 열립니다.
+
+## 방명록
+
+기본 방명록은 현재 브라우저의 localStorage에 저장됩니다. 새로고침 후 유지되지만 다른 방문자나 다른 기기와 공유되지 않습니다. 기록을 실제 방문자의 글처럼 보이게 하는 가짜 예시는 넣지 않았습니다. 저장소 접근이 차단되거나 저장에 실패하면 성공으로 표시하지 않습니다.
+
+### 모든 방문자가 공유하는 방명록으로 전환
+
+GitHub Pages는 정적 호스팅이므로 별도 저장소가 필요합니다. 코드에는 Supabase REST 연결이 준비되어 있습니다.
+
+1. Supabase 프로젝트를 생성합니다.
+2. SQL Editor에서 `setup/supabase.sql`을 실행합니다.
+3. 프로젝트의 API URL과 공개 anon 키(또는 공개 publishable 키)를 `config.js`의 `supabaseUrl`, `supabaseAnonKey`에 입력합니다.
+4. GitHub에 수정한 파일을 업로드합니다. 이제 공개 방명록 모드로 전환됩니다. 서로 다른 브라우저에서 등록과 조회를 확인하세요.
+
+**service_role 키 및 비밀 키는 절대로 웹사이트에 넣지 마세요.** 제공 SQL은 공개 읽기/등록만 허용하고, 방문자의 수정/삭제 및 서버 시각 지정은 허용하지 않습니다. 글은 Supabase 대시보드에서 관리할 수 있습니다. 최근 100개의 글을 가져오며 화면에는 4개씩 펼쳐집니다. 공개 등록을 널리 운영할 경우 서버 측 요청 제한이나 봇 방지 기능을 추가하세요. 이 작업에서는 외부 Supabase 프로젝트가 제공되지 않아 실제 공유 서버 연결은 검증하지 않았습니다.
+
+## 작품과 콘텐츠 수정
+
+- 실제 작품 사진이 없으므로 `assets/time-machine.svg`는 별도로 그린 콘셉트 일러스트입니다. 실제 사진이 준비되면 `index.html`의 이미지 경로와 대체 텍스트를 변경하세요.
+- 팀원 이름은 제공되지 않아 임의의 이름을 넣지 않았습니다. `#team` 영역에 실제 이름과 역할을 추가할 수 있습니다.
+- 모터 제어 코드가 제공되지 않아 임의의 하드웨어 코드는 게시하지 않았습니다. 작품 설명 아래에 실제 사용한 코드나 저장소 링크를 추가할 수 있습니다.
+- 첫 화면 일러스트 옆 주황색 별표를 누르면 가상 미래 기사가 열립니다. 기사에 가상 이야기임을 표시했습니다.
+- 시간 여행 탭은 방향키, Home, End와 키보드 탐색을 지원합니다.
+- Google Fonts를 사용할 수 없는 환경에서는 시스템 글꼴로 표시됩니다. 이미지와 스크립트는 로컬 파일입니다.
+
+## 로컬 확인
+
+이 폴더에서 `python3 -m http.server 8000` 실행 후 `http://localhost:8000`을 엽니다. 별도의 설치나 빌드는 필요 없습니다.
